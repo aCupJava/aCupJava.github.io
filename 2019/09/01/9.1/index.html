@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Lincoln`s blog">
 <meta property="og:description" content="最近学习web前端网络攻防知识，突然想到抓包，哈哈哈，虽然可能不是很好的行为，但是学习学习，挺有意思的。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-01T07:00:10.949Z">
+<meta property="og:updated_time" content="2019-09-01T09:16:14.181Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="抓包脚本学习">
 <meta name="twitter:description" content="最近学习web前端网络攻防知识，突然想到抓包，哈哈哈，虽然可能不是很好的行为，但是学习学习，挺有意思的。">
@@ -175,6 +175,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>最近学习web前端网络攻防知识，突然想到抓包，哈哈哈，虽然可能不是很好的行为，但是学习学习，挺有意思的。</p>
+<a id="more"></a>
+<p>脚本配置，确保在网站上能够运行，创建一个文件夹，创建下列两个文件</p>
+<h1 id="manifest-json"><a href="#manifest-json" class="headerlink" title="manifest.json"></a>manifest.json</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"manifest_version"</span>: 2,</span><br><span class="line">  <span class="string">"name"</span>: <span class="string">"抓包"</span>,</span><br><span class="line">  <span class="string">"version"</span>: <span class="string">"1.0"</span>,</span><br><span class="line">  <span class="string">"description"</span>: <span class="string">"抓包"</span>,</span><br><span class="line">  <span class="string">"content_scripts"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">"matches"</span>: [<span class="string">"抓取的网站网址（eg.https://www.baidu.com/）"</span>],</span><br><span class="line">      <span class="string">"js"</span>: [<span class="string">"script.js"</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>js脚本，可以在这个文件下写入要对网站植入的操作，常用的是获取一些数据：<br>1、读取本地 json文件，然后可以把数据写入进去<br>2、生成json文件，再写入（这个还在研究）</p>
+<p>做法就是找到获取需要获得或者操作的选择器，F12 你懂得</p>
+<p>#script.js</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">window.onload = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    var date = new Date();</span><br><span class="line">    <span class="keyword">if</span> (date.getHours() &gt;= 12) &#123;</span><br><span class="line">        // 此处为相应页面的抢票按钮，请自行获取dom元素</span><br><span class="line">    var p = document.getElementsByTagName(<span class="string">'p'</span>);</span><br><span class="line">    <span class="keyword">for</span>(var i = 0;i&lt;p.length;i++)</span><br><span class="line">        console.log(p[i].innerText);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>最后，我用的Chrome浏览器，点开设置-更多工具-扩展程序-添加已解压插件，然后回到要抓取的网站上刷新一下就好啦</p>
 
       
 
