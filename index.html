@@ -152,6 +152,94 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-iView" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/04/iView/">iView</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/04/iView/" class="archive-article-date">
+  	<time datetime="2019-09-04T01:52:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近做的项目客制化因为涉及到这块，简单学习研究一下，这类UI框架大都大同小异，element啦，easyui啦。</p>
+<p>1、栅格化 有点类似 bootstrap</p>
+<p>*注意：非 template/render 模式下，需使用 i-col。一般常用的都是template</p>
+<p>#code</p>
+<pre><code class="bash">&lt;div&gt;
+    &lt;Row&gt;
+        &lt;Col span=<span class="string">'8'</span>&gt;这是col 1&lt;/Col&gt;
+        &lt;Col span=<span class="string">'8'</span>&gt;这是col 2&lt;/Col&gt;
+        &lt;Col span=<span class="string">'8'</span>&gt;这是col 3&lt;/Col&gt;
+    &lt;/Row&gt;
+    &lt;Row&gt;
+        &lt;i-col&gt;这是i-col&lt;/i-col&gt;
+        &lt;i-col&gt;这是i-col&lt;/i-col&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/04/iView/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-9.1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -371,6 +459,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
