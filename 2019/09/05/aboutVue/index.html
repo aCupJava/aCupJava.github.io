@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>aboutVue | Lincoln`s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="啊，vue很头疼的一个问题，单页面跳转的问题：1、跳转到下一页，一般都没啥问题，在根路径下router-link :to=’/index’或者push({path:’/index’})2、跳转到站外，这里很坑，注意高能-&amp;gt;要使用home点击后就成了http://localhost:3000/www.baidu.com/blabla,哈哈哈 蛋疼还以为是router的问题研究半天，其实给地址加">
+  <meta name="description" content="啊，vue很头疼的一个问题，单页面跳转的问题：1、跳转到下一页，一般都没啥问题，在根路径下router-link :to=’/index’或者push({path:’/index’})2、跳转到站外，这里很坑，注意高能-&amp;gt;要使用&amp;lt;a href=&amp;quot;www.baidu.com&amp;quot;&amp;gt;home&amp;lt;/a&amp;gt;点击后就成了http://localhost:3000/w">
 <meta property="og:type" content="article">
 <meta property="og:title" content="aboutVue">
 <meta property="og:url" content="http://yoursite.com/2019/09/05/aboutVue/index.html">
 <meta property="og:site_name" content="Lincoln`s blog">
-<meta property="og:description" content="啊，vue很头疼的一个问题，单页面跳转的问题：1、跳转到下一页，一般都没啥问题，在根路径下router-link :to=’/index’或者push({path:’/index’})2、跳转到站外，这里很坑，注意高能-&amp;gt;要使用home点击后就成了http://localhost:3000/www.baidu.com/blabla,哈哈哈 蛋疼还以为是router的问题研究半天，其实给地址加">
+<meta property="og:description" content="啊，vue很头疼的一个问题，单页面跳转的问题：1、跳转到下一页，一般都没啥问题，在根路径下router-link :to=’/index’或者push({path:’/index’})2、跳转到站外，这里很坑，注意高能-&amp;gt;要使用&amp;lt;a href=&amp;quot;www.baidu.com&amp;quot;&amp;gt;home&amp;lt;/a&amp;gt;点击后就成了http://localhost:3000/w">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-05T06:03:37.789Z">
+<meta property="og:updated_time" content="2019-09-05T06:04:59.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="aboutVue">
-<meta name="twitter:description" content="啊，vue很头疼的一个问题，单页面跳转的问题：1、跳转到下一页，一般都没啥问题，在根路径下router-link :to=’/index’或者push({path:’/index’})2、跳转到站外，这里很坑，注意高能-&amp;gt;要使用home点击后就成了http://localhost:3000/www.baidu.com/blabla,哈哈哈 蛋疼还以为是router的问题研究半天，其实给地址加">
+<meta name="twitter:description" content="啊，vue很头疼的一个问题，单页面跳转的问题：1、跳转到下一页，一般都没啥问题，在根路径下router-link :to=’/index’或者push({path:’/index’})2、跳转到站外，这里很坑，注意高能-&amp;gt;要使用&amp;lt;a href=&amp;quot;www.baidu.com&amp;quot;&amp;gt;home&amp;lt;/a&amp;gt;点击后就成了http://localhost:3000/w">
   
     <link rel="alternative" href="/atom.xml" title="Lincoln`s blog" type="application/atom+xml">
   
@@ -174,7 +174,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>啊，vue很头疼的一个问题，单页面跳转的问题：<br>1、跳转到下一页，一般都没啥问题，在根路径下<br>router-link :to=’/index’或者push({path:’/index’})<br>2、跳转到站外，这里很坑，注意高能-&gt;要使用<a href="www.baidu.com">home</a><br>点击后就成了<a href="http://localhost:3000/www.baidu.com/blabla,哈哈哈" target="_blank" rel="noopener">http://localhost:3000/www.baidu.com/blabla,哈哈哈</a> 蛋疼还以为是router的问题研究半天，其实<br>给地址加个协议就好了<a href="https://www.baidu.com" target="_blank" rel="noopener">home</a>（或者<a :href="url">home</a>）就可以辣</p>
+        <p>啊，vue很头疼的一个问题，单页面跳转的问题：<br>1、跳转到下一页，一般都没啥问题，在根路径下<br>router-link :to=’/index’或者push({path:’/index’})<br>2、跳转到站外，这里很坑，注意高能-&gt;要使用<br><code>&lt;a href=&quot;www.baidu.com&quot;&gt;home&lt;/a&gt;</code><br>点击后就成了<code>http://localhost:3000/www.baidu.com/blabla</code>,哈哈哈 蛋疼还以为是router的问题研究半天，其实<br>给地址加个协议就好了<code>&lt;a href=&quot;https://www.baidu.com&quot;&gt;home&lt;/a&gt;（或者&lt;a :href=&quot;url&quot;&gt;home&lt;/a&gt;）</code>就可以辣</p>
 
       
 
